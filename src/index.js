@@ -1,7 +1,7 @@
 function promesaSimple() {
     return new Promise ((resolve) => {
         setTimeout(() => {
-            resolve('hola bienvenido al ejercicio1')
+            resolve('hola bienvenido al ejercicio1 saludando con 8 segundos despues')
         }, 8000);
     })
 }
