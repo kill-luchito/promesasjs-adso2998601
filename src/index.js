@@ -1,22 +1,19 @@
-//Funcion para simular la descarga de un archivo, utilizando promesas
-
-function descargarArchivo () {
+function promesaSimple() {
     return new Promise ((resolve) => {
         setTimeout(() => {
-            resolve ('📁📁📁📁📁 ARCHIVO DESCARGADO CON EXITO....📁📁📁📁📁📁')
-        }, 5000);
+            resolve('hola bienvenido al ejercicio1')
+        }, 8000);
     })
 }
 
-//funcion con aync
-async function ejecutar() {
+ async function ejetuar() {
     try {
-        console.log("⌛⌛⌛ Descarga en proceso....⌛⌛⌛⌛⌛")
-        const respuesta = await descargarArchivo()
+        console.log("en proceso el saludo")
+        const respuesta = await promesaSimple()
         console.log(respuesta)
     } catch (error) {
-        console.error("✖️✖️✖️ Error al descargar", error)
-    }   
-}
+        console.log("✖️✖️✖️ Error al saludar", error)
+    }
+ }
 
-ejecutar()
+ ejetuar()
